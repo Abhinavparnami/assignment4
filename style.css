@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  h1{
+    color: aliceblue;
+    font-size: 3rem;
+    justify-content:space-around;
+  }
+  
+  nav{
+    width: 100vw;
+    height: 80px;
+    background-color: blue;
+  }
+  
+  ul{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+   
+  }
+  
+  li{
+    list-style-type: none;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  
+  /* li:hover{
+    background-color: rgba(1,0,0,0.5);
+  } */
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .brand:hover{
+    color: #ee6c4d;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:650px){
+    
+    ul{
+      flex-direction: column;
+      align-items: center;
+    }
+    nav{
+      height: 450px;
+    }
+  }
+  
+                                      /* NAVBAR ENDS HERE  */
+  
+  
+  #slideshow{
+    width: 60vw;
+    height: 700px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .slide{
+    float:left
+  }
+  
+  .slide img{
+  
+    height: 700px;
+    width: 60vw;
+  }
+  
+  .wrapper{
+    /* border: 5px solid black; */
+    width: calc(70vw*6);
+    animation:  20s ease infinite slider;
+  }
+  
+  @keyframes slider {
+    /* Calculate the margin-left for 
+    each of the slides */
+  
+    16% {
+      margin-left: 0px;
+    }
+    
+    32% {
+      margin-left: calc(-60vw * 1);
+    }
+    
+    48% {
+      margin-left: calc(-60vw * 2);
+    }
+    
+    64% {
+      margin-left: calc(-60vw* 3);
+    }
+  
+    80%{
+      margin-left:calc(-60vw*4);
+    }
+  
+    96%{
+      margin-left:calc(-60vw*5);
+    }
+  }
+  
+                  /* SLIDESHOW ENDS HERE  */
+  
+  
+  #items{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75vw;
+    margin:30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  figure{
+    width: 300px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104,104,104);
+    transition: 100ms;
+  }
+  
+  figure:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  figure img{
+    width: 100%;
+  }
+  
+  figure button{
+    font-size: 1.5rem;
+    width: 90px;
+    height: 40px;
+    border-radius: 2px;
+    transition: 1s ease;
+  }
+  
+  figure button:hover{
+    background-color: #ee6c4d;
+    cursor: pointer;
+  }
+  
+                  /* ITEMS END HERE  */
+  
+  footer{
+    height: 900px;
+  }
